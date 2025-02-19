@@ -7,6 +7,7 @@ camera.lookAt( 0, 0, 0 );
 
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
+// document.getElementById("scene2").appendChild( renderer.domElement );
 document.body.appendChild( renderer.domElement );
 
 // Draw Planet

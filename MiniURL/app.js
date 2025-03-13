@@ -1,5 +1,6 @@
 const mainDiv = document.querySelector(".js-main");
-const selectLink = document.querySelector(".js-link").addEventListener("click", ()=>{
+
+document.querySelector(".js-link").addEventListener("click", ()=>{
     mainDiv.innerHTML =
     `
     <h3 class="customh3">Shorten a long URL link</h3>
@@ -14,7 +15,8 @@ const selectLink = document.querySelector(".js-link").addEventListener("click", 
     </div>
     `
 });
-const selectQR = document.querySelector(".js-qr").addEventListener("click", ()=>{
+
+document.querySelector(".js-qr").addEventListener("click", ()=>{
     mainDiv.innerHTML = 
     `
     <h3 class="customh3">Create a QR Code</h3>
@@ -29,3 +31,20 @@ const selectQR = document.querySelector(".js-qr").addEventListener("click", ()=>
     </div>
     `
 });
+
+document.getElementById("urlForm").addEventListener('submit', async(event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+    const response = await sendData("http://127.0.0.1:8000/", data);
+    console.log(response);
+})
+
+async function sendData(url, data) {
+    const response = await fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(data)
+    });
+    const result = await response.json()
+    return result;
+}

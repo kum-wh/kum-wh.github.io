@@ -36,7 +36,7 @@ document.getElementById("urlForm").addEventListener('submit', async(event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
-    const response = await sendData("http://127.0.0.1:8000/", data);
+    const response = await sendData("https://swifter.pythonanywhere.com/", data);
     console.log(response);
 })
 

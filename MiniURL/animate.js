@@ -11,7 +11,7 @@ const txt = [
     "Shorten It",
     "https://example.com/way-too-complex", 
     "Convert It",
-    "Only Available at 3pm - 5pm SGT daily"
+    "URL Shortener"
 ]
 
 setTimeout(typeWriter, 3800);

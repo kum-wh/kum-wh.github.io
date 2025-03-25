@@ -14,7 +14,7 @@ export default function Home() {
           enableMouseInteraction={false}
         />
       </div>
-      <MainHome/>
+      {/* <MainHome/> */}
       <div style={{ width: '100%', height: '100vh', position: 'relative', backgroundColor: 'black', marginTop:"70vh"}}>
         <Aurora
           colorStops={["#00D8FF", "#7CFF67", "#00D8FF"]}

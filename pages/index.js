@@ -1,18 +1,21 @@
-import Threads from './thread.js';
-import Aurora from './aurora.js';
-import Iridescence from './iridescence.js';
+import Threads from './thread.jsx';
+import Aurora from './aurora.jsx';
+import Iridescence from './iridescence.jsx';
+import MainHome from './homepage.jsx';
+import MainGame from './gamepage.jsx';
 
 export default function Home() {
   return (
     <div>
-      <div style={{ width: '100%', height: '100vh', position: 'relative', backgroundColor: 'black'}}>
+      <div style={{ width: '100%', height: '100vh', position: 'relative', backgroundColor: 'black', zIndex: 0}}>
         <Threads
-          amplitude={2}
+          amplitude={1.5}
           distance={0}
           enableMouseInteraction={false}
         />
       </div>
-      <div style={{ width: '100%', height: '100vh', position: 'relative', backgroundColor: 'black'}}>
+      <MainHome/>
+      <div style={{ width: '100%', height: '100vh', position: 'relative', backgroundColor: 'black', marginTop:"70vh"}}>
         <Aurora
           colorStops={["#00D8FF", "#7CFF67", "#00D8FF"]}
           blend={1.0}
@@ -20,7 +23,7 @@ export default function Home() {
           speed={0.5}
         />
       </div>
-      <div style={{ width: '100%', height: '100vh', position: 'relative'}}>
+      <div style={{ width: '100%', height: '100vh', position: 'relative', zIndex: 0}}>
           <Iridescence
             color={[0, 1, 1]}
             mouseReact={false}
@@ -28,6 +31,7 @@ export default function Home() {
             speed={0.5}
           />
       </div>
+      <MainGame/>
     </div>
   );
 }

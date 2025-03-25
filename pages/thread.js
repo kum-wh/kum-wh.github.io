@@ -220,7 +220,7 @@ const Threads = ({
     };
   }, [color, amplitude, distance, enableMouseInteraction]);
 
-  return <div ref={containerRef} className="w-full h-full relative" {...rest} />;
+  return <div style={{height: "100vh"}} ref={containerRef} className="w-full h-full relative" {...rest} />;
 };
 
 export default Threads;

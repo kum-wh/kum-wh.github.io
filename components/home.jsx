@@ -10,17 +10,20 @@ export default function HomePage() {
     };
     
     return (
-        <>
-            <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex:2 }}>
+        <div style={{ width: '98%', height: '100vh', position: 'relative', zIndex:1 }}>            
+            <div style={{ width: '100%', height: '92%', fontSize:'28px', position: 'absolute', zIndex:2 }}>
                 <Orb
                     hoverIntensity={0.5}
                     rotateOnHover={true}
                     hue={0}
                     forceHoverState={false}
                 />
+                <div style={{display:'flex', justifyContent:'center', alignItems:'flex-end', fontSize:'28px'}}>
+                    <ShinyText text="Scroll Down for more" disabled={false} speed={2}/>
+                </div>
             </div>
             
-            <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100%', width:'100%', position:'absolute', zIndex:1 }}>
+            <div style={{display:'flex', justifyContent:'center', alignItems:'center', height:'100%', width:'100%'}}>
                 <div>
                     <BlurText
                     text="Welcome to My Project Portfolio Site"
@@ -49,9 +52,6 @@ export default function HomePage() {
                     </div>
                 </div>
             </div>
-            <div style={{display:'flex', justifyContent:'center', alignItems:'flex-end', height:'98%', width:'100%', fontSize:'28px'}}>
-                <ShinyText text="Scroll Down for more" disabled={false} speed={2}/>
-            </div>
-        </>
+        </div>
     );
 }

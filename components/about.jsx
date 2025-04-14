@@ -6,7 +6,7 @@ import Image from 'next/image.js';
 export default function About() {
 
     return (
-        <div id='aboutmepage' style={{ width: '100%', height: '100%', position:'relative', zIndex:1}}>
+        <div id='aboutmepage' style={{ width: '98%', height: '100%', position:'relative', zIndex:1}}>
             <div style={{ paddingTop:'100px'}}>
                 <div style={{ color:'white'}}>
                     <TrueFocus 

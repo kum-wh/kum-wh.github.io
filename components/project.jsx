@@ -3,13 +3,13 @@ import { useState } from 'react';
 
 export default function Projects() {
 
-    const items = ['MiniUrl', 'PeerCode', 'ChatApp'];
+    const items = ['MiniUrl', 'PeerCode', 'BioFest'];
     const [current, setCurrent] = useState("miniurl");
 
     return (
-        <div id='projectpage' style={{ width: '100%', height: '100%', position:'relative', zIndex:1}}>
+        <div id='projectpage' style={{ width: '98%', height: '100vh', position:'relative', zIndex:1}}>
             <div style={{ paddingTop:'100px'}}>
-                <div style={{fontSize:'30px', position:'absolute', zIndex:2}}>
+                <div style={{fontSize:'25px', position:'absolute', zIndex:2}}>
                     <AnimatedList
                         items={items}
                         onItemSelect={(item, index) => setCurrent(item)}
@@ -19,7 +19,8 @@ export default function Projects() {
                     />
                 </div>
 
-                <div style={{backgroundColor:'white', width:'200px', height:'200px', marginLeft:'300px', position:'absolute', zIndex:1}}>
+                <div style={{backgroundColor:'white', width:'80%', height:'80%', marginLeft:'200px', position:'absolute', zIndex:1}}>
+                {current}
                 </div>
             </div>
         </div>

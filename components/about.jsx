@@ -1,6 +1,6 @@
 import TrueFocus from './texts/trueFocus.jsx';
 import GradientText from './texts/gradient.jsx';
-import SpotlightCard from './card.jsx';
+import SpotlightCard from './ui/card.jsx';
 import Image from 'next/image.js';
 
 export default function About() {
@@ -32,8 +32,8 @@ export default function About() {
                     </GradientText>
                 </div>
 
-                <div style={{marginTop:'15px', marginLeft:'auto', marginRight:'auto', width:'600px', fontSize:'20px', color:'#D3D3D3'}}>
-                    <SpotlightCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">
+                <div style={{marginTop:'15px', marginLeft:'auto', marginRight:'auto', width:'40vw', minWidth:'360px', fontSize:'20px', color:'#D3D3D3'}}>
+                    <SpotlightCard className="" spotlightColor="rgba(0, 229, 255, 0.2)">
                         Professional Certifications: AWS Cloud Practitioner <br/>
                         <br/>
                         Coding Languages: Python, C++, Javascript, Golang<br/>

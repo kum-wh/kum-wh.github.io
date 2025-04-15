@@ -13,6 +13,11 @@ body {
   background-color: #121212;
 }
 
+.popup {
+  background-color: #121212;
+  height: 85vh;
+}
+
 @media (max-width: 760px) {
   #projectpage>div {
     flex-wrap: wrap;

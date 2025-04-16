@@ -3,7 +3,6 @@ import SpotlightCard from './card.jsx';
 import PixelTransition from './pixel.jsx';
 import Folder from './folder.jsx';
 import ShinyText from "../texts/shinyText.jsx";
-import LetterGlitch from '../background/glitch.jsx';
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger} from "@/components/ui/dialog"
 

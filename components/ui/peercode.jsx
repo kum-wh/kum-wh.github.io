@@ -86,12 +86,6 @@ export default function PeerCode({title, category, github}) {
                                                 pauseOnHover={false}
                                                 negativeMargin="-2em"
                                             /> */}
-                                            <LetterGlitch
-                                            glitchSpeed={50}
-                                            centerVignette={false}
-                                            outerVignette={true}
-                                            smooth={true}
-                                            />
                                         </div>
                                     </div>
                                     </ScrollArea>

@@ -2,7 +2,6 @@ import CircularText from './texts/circularText.jsx';
 import InfiniteScroll from './ui/scroll.jsx';
 import MiniUrlCard from './ui/miniurlcard.jsx';
 import PeerCode from './ui/peercode.jsx';
-import BioFestCard from './ui/biofest.jsx';
 import Image from 'next/image.js';
 
 export default function Projects() {

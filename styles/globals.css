@@ -5,7 +5,7 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-y: scroll
+  /* overflow-y: scroll */
 }
 
 body {
@@ -17,6 +17,13 @@ body {
   background-color: #121212;
   height: 85vh;
 }
+
+@media (max-width: 1200px) {
+  .projectscroll {
+    display: none;
+  }
+}
+
 
 @media (max-width: 760px) {
   #projectpage>div {

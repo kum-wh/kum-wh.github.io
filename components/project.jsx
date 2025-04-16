@@ -1,6 +1,8 @@
 import CircularText from './texts/circularText.jsx';
 import InfiniteScroll from './ui/scroll.jsx';
-import ProjectCard from './ui/projectcard.jsx';
+import MiniUrlCard from './ui/miniurlcard.jsx';
+import PeerCode from './ui/peercode.jsx';
+import BioFestCard from './ui/biofest.jsx';
 import Image from 'next/image.js';
 
 export default function Projects() {
@@ -44,13 +46,10 @@ export default function Projects() {
 
                 <div style={{height:'100%', display: 'flex', flexWrap: 'wrap', marginTop:'50px', justifyContent:'center'}}>
                     <div style={{width:'350px', height:'424px', margin:'5px'}}>
-                        <ProjectCard title='MiniUrl' category='Full Stack Application' github='https://github.com/kum-wh/TinyURL-Clone'/>
+                        <MiniUrlCard title='MiniUrl' category='Full Stack Application' github='https://github.com/kum-wh/TinyURL-Clone'/>
                     </div>
                     <div style={{width:'350px', height:'424px', margin:'5px'}}>
-                        <ProjectCard title='PeerCode' category='Full Stack Application' github=''/>
-                    </div>
-                    <div style={{width:'350px', height:'424px', margin:'5px'}}>
-                        <ProjectCard title='BioFest' category='Game Dev' github='https://github.com/kum-wh/Orbital'/>
+                        <PeerCode title='PeerCode' category='Full Stack Application' github=''/>
                     </div>
                 </div>
             </div>
